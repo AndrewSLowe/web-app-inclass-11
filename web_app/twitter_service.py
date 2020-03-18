@@ -19,6 +19,10 @@ print("API", api)
 
 user = api.get_user('Chrisalbon')
 print('USER', user)
+print(user.screen_name)
+print(user.name)
+print(user.followers_count)
+# dir(user) => can see followers counts, and tons of other shit!
 
 breakpoint()
 

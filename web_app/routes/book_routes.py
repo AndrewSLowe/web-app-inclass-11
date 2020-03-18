@@ -28,11 +28,11 @@ def list_books():
 @book_routes.route("/books")
 def list_books_for_humans():
     books = get_books_from_db()
-    return render_template("books.html", message="Here's some books", books=books)
+    return render_template("books.htm", message="Here's some books", books=books)
 
 @book_routes.route("/books/new")
 def new_book():
-    return render_template("new_book.html")
+    return render_template("new_book.htm")
 
 @book_routes.route("/books/create", methods=["POST"])
 def create_book():

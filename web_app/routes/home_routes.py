@@ -7,7 +7,7 @@ home_routes = Blueprint("home_routes", __name__)
 def index():
     #x = 2 + 2
     #return f"Hello World! {x}"
-    return render_template("home.html")
+    return render_template("home.htm")
 
 @home_routes.route("/about")
 def about():
